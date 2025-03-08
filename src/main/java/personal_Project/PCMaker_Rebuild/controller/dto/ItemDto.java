@@ -25,7 +25,7 @@ public record ItemDto(UUID id,
                         .collect(toList()));
     }
 
-    public personal_Project.PCMaker_Rebuild.domain.model.Item toModel() {
+    public Item toModel() {
         var model = new Item();
         model.setId(this.id);
         model.setQuantity(this.quantity);
